@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { LOGO_URL } from "../utils/constant";
 
 export default function Header (){
@@ -9,9 +10,9 @@ export default function Header (){
             </div>
             <div className="nav">
                 <ul className="nav-items">
-                    <li className="nav-links"><a href="#home">Home</a></li>
-                    <li className="nav-links"><a href="#about">About</a></li>
-                    <li className="nav-links"><a href="#contact">Contact</a></li>
+                    <li className="nav-links"><Link to="/">Home</Link></li>
+                    <li className="nav-links"><Link to="/about">About</Link></li>
+                    <li className="nav-links"><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </header>
