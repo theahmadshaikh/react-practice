@@ -35,7 +35,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path:"/restaurants/:id",
-                element:<RestaurantMenu apiUrl={`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9352403&lng=77.624532&restaurantId=671928`} />,
+                element:<RestaurantMenu/>,
                 errorElement: <ErrorPage />
             }
             

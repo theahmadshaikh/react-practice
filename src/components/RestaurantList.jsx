@@ -20,6 +20,7 @@ export default function RestaurantList({ data = [], isLoading }) {
     <div className="restaurant-container">
       {data.map((restaurant) => (
         <RestaurantCard
+        id={restaurant.id}
           key={restaurant.id}
           imgUrl={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${restaurant.cloudinaryImageId}`}
           restaurantName={restaurant.name}
