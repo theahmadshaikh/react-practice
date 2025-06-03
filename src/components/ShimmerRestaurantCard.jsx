@@ -1,16 +1,13 @@
-import React from "react";
-import "../../index.css"; // Assuming you have a CSS file for styles
-
 export default function ShimmerRestaurantCard() {
   return (
-    <div className="restaurant-card shimmer-card">
-      <div className="shimmer shimmer-image" />
-      <div className="shimmer shimmer-title" />
-      <div className="cusine-and-delivery">
-        <div className="shimmer shimmer-text" />
-        <div className="shimmer shimmer-text" />
+    <div className="animate-pulse bg-white rounded-lg overflow-hidden shadow-md p-4 space-y-4">
+      <div className="w-full h-40 bg-gray-300 rounded"></div>
+      <div className="h-4 w-3/4 bg-gray-300 rounded"></div>
+      <div className="space-y-2">
+        <div className="h-3 w-1/2 bg-gray-300 rounded"></div>
+        <div className="h-3 w-1/3 bg-gray-300 rounded"></div>
       </div>
-      <div className="shimmer shimmer-rating" />
+      <div className="h-4 w-16 bg-gray-300 rounded"></div>
     </div>
   );
 }

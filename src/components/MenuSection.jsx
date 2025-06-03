@@ -1,6 +1,6 @@
 import { useState, useRef, useLayoutEffect } from "react";
 import MenuCard from "./MenuCard";
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const MenuSection = ({ section }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -22,7 +22,7 @@ const MenuSection = ({ section }) => {
   }, [isOpen]);
 
   const toggle = () => {
-    setIsOpen(prev => {
+    setIsOpen((prev) => {
       const newState = !prev;
 
       if (!newState) {
@@ -40,17 +40,22 @@ const MenuSection = ({ section }) => {
   };
 
   return (
-    <div className="menu-section">
-      <div className="menu-section-header" onClick={toggle}>
-        <h2 className="section-title">
+    <div className="border border-gray-200 rounded-md shadow-sm">
+      {/* Header */}
+      <button
+        onClick={toggle}
+        className="w-full flex items-center justify-between px-4 py-3 bg-gray-100 hover:bg-gray-200 transition rounded-t-md"
+        aria-expanded={isOpen}
+      >
+        <h2 className="text-lg font-semibold text-gray-800">
           {section.category} ({section.items?.length || 0})
         </h2>
         {isOpen ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
-      </div>
+      </button>
 
+      {/* Content */}
       <div
         ref={contentRef}
-        className="menu-items-wrapper"
         style={{
           maxHeight: height,
           overflow: "hidden",
@@ -58,9 +63,11 @@ const MenuSection = ({ section }) => {
           opacity: isOpen ? 1 : 0,
         }}
       >
-        {section.items.map(item => (
-          <MenuCard key={item.id} item={item} />
-        ))}
+        <div className="divide-y divide-gray-100 ">
+          {section.items.map((item) => (
+            <MenuCard key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );
