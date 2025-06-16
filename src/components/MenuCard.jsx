@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "../utils/cartSlice"; 
+import toast from "react-hot-toast"; // ✅ import toast
 
 const MenuCard = ({ item }) => {
   const dispatch = useDispatch();
@@ -7,22 +8,22 @@ const MenuCard = ({ item }) => {
 
   const handleAddToCart = () => {
     dispatch(addItemToCart({
-      id: item.id,
-      name: item.name,
-      price,
-      imageUrl: item.imageUrl,
+      ...item,
       quantity: 1,
     }));
+    
+    // ✅ Show toast
+    toast.success(`${item.name} added to cart!`, {
+      duration: 2000,
+    });
   };
 
   return (
     <div className="flex justify-between gap-4 px-4 py-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
-      {/* Info Section */}
       <div className="flex-1">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
           {item.name}
         </h3>
-
         <p className="text-sm text-gray-700 dark:text-gray-300">
           ₹{price.toLocaleString("en-IN")}
         </p>
@@ -43,7 +44,6 @@ const MenuCard = ({ item }) => {
         )}
       </div>
 
-      {/* Image & ADD Button Section */}
       {item.imageUrl && (
         <div className="w-28 flex flex-col items-center">
           <img

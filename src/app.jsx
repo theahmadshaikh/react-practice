@@ -12,11 +12,14 @@ import CartDrawer from "./components/CartDrawer";
 import { PersistGate } from "redux-persist/integration/react"; // <-- add this
 const Grocery = React.lazy(() => import("./components/Grocery"));
 
+import { Toaster } from "react-hot-toast";
+
 function AppLayout() {
   return (
     <Provider store={appStore}>
       <PersistGate loading={null} persistor={persistor}>
         <div className="app-layout">
+          <Toaster position="top-right" /> {/* ✅ Toast setup */}
           <Header />
           <CartDrawer />
           <Outlet />
@@ -25,6 +28,7 @@ function AppLayout() {
     </Provider>
   );
 }
+
 
 const appRouter = createBrowserRouter([
   {
