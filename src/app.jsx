@@ -7,60 +7,62 @@ import About from "./components/About";
 import ErrorPage from "./components/ErrorPage";
 import { RestaurantMenu } from "./components/RestaurantMenu";
 import { Provider } from "react-redux";
-import appStore from "./utils/appStore";
+import appStore, { persistor } from "./utils/appStore"; // <-- update
 import CartDrawer from "./components/CartDrawer";
+import { PersistGate } from "redux-persist/integration/react"; // <-- add this
 const Grocery = React.lazy(() => import("./components/Grocery"));
 
-
-
-
 function AppLayout() {
-    return (
-        <Provider store={appStore}> 
+  return (
+    <Provider store={appStore}>
+      <PersistGate loading={null} persistor={persistor}>
         <div className="app-layout">
-            <Header />
-            <CartDrawer />
-            <Outlet />
+          <Header />
+          <CartDrawer />
+          <Outlet />
         </div>
-        </Provider>
-    );
+      </PersistGate>
+    </Provider>
+  );
 }
 
 const appRouter = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
         path: "/",
-        element: <AppLayout />,
-        children: [
-            {
-                path: "/",
-                element: <Body />,
-                errorElement: <ErrorPage />
-            },
-            {
-                path: "/about",
-                element: <About />,
-                errorElement: <ErrorPage />
-            },
-            {
-                path: "/restaurants/:id",
-                element: <RestaurantMenu />,
-                errorElement: <ErrorPage />
-            },
-            {
-                path: "/grocery",
-                element: <React.Suspense fallback={<h2>Loading...</h2>}><Grocery /></React.Suspense>,
-                errorElement: <ErrorPage />
-            },
-            
-        ],
-        errorElement: <ErrorPage />
-
-    },
-    {
-        path: "*",
-        element: <ErrorPage />
-    }
-])
+        element: <Body />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/restaurants/:id",
+        element: <RestaurantMenu />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/grocery",
+        element: (
+          <React.Suspense fallback={<h2>Loading...</h2>}>
+            <Grocery />
+          </React.Suspense>
+        ),
+        errorElement: <ErrorPage />,
+      },
+    ],
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);

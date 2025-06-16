@@ -1,5 +1,19 @@
+import { useDispatch } from "react-redux";
+import { addItemToCart } from "../utils/cartSlice"; 
+
 const MenuCard = ({ item }) => {
+  const dispatch = useDispatch();
   const price = item.price ?? item.defaultPrice ?? 0;
+
+  const handleAddToCart = () => {
+    dispatch(addItemToCart({
+      id: item.id,
+      name: item.name,
+      price,
+      imageUrl: item.imageUrl,
+      quantity: 1,
+    }));
+  };
 
   return (
     <div className="flex justify-between gap-4 px-4 py-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
@@ -38,7 +52,10 @@ const MenuCard = ({ item }) => {
             alt={item.name}
           />
 
-          <button className="mt-2 bg-white dark:bg-gray-900 text-green-600 border border-green-600 text-xs px-3 py-1 rounded-full shadow hover:bg-green-600 hover:text-white transition">
+          <button
+            onClick={handleAddToCart}
+            className="mt-2 bg-white dark:bg-gray-900 text-green-600 border border-green-600 text-xs px-3 py-1 rounded-full shadow hover:bg-green-600 hover:text-white transition"
+          >
             ADD
           </button>
 

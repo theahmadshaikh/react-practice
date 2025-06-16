@@ -35,7 +35,7 @@ export default function NavLinks({ cartCount }) {
                     onClick={() => dispatch(openCartDrawer())}
                     className="cursor-pointer text-white hover:text-yellow-400 transition-all duration-200"
                 >
-                    <CartIcon count={cartCount} />
+                    <CartIcon />
                 </button>
             </li>
 
