@@ -1,7 +1,8 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromoRestaurantCard } from "./RestaurantCard";
 import ShimmerRestaurantCard from "./ShimmerRestaurantCard";
 
 export default function RestaurantList({ data = [], isLoading }) {
+  const PromotedRestaurantCard = withPromoRestaurantCard(RestaurantCard);
   if (isLoading) {
     return (
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4">
@@ -19,10 +20,21 @@ export default function RestaurantList({ data = [], isLoading }) {
       </div>
     );
   }
-
   return (
     <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4">
-      {data.map((restaurant) => (
+      {data.map((restaurant) => {
+        return(
+          restaurant.promoted ? (
+            <PromotedRestaurantCard
+              key={restaurant.id}
+              id={restaurant.id}
+              imgUrl={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${restaurant.cloudinaryImageId}`}
+              restaurantName={restaurant.name}
+              cuisine={restaurant.cuisines.join(", ")}
+              rating={restaurant.avgRating}
+              deliveryTime={restaurant.sla.deliveryTime}
+            />
+          ) :
         <RestaurantCard
           key={restaurant.id}
           id={restaurant.id}
@@ -32,7 +44,7 @@ export default function RestaurantList({ data = [], isLoading }) {
           rating={restaurant.avgRating}
           deliveryTime={restaurant.sla.deliveryTime}
         />
-      ))}
+      )})}
     </div>
   );
 }

@@ -26,8 +26,16 @@ export const RestaurantMenu = () => {
     );
   }
 
+  if (!menu || menu.length === 0) {
+    return (
+      <div className="p-6 max-w-5xl mx-auto text-center text-gray-600 dark:text-gray-300">
+        <p>No menu available for this restaurant.</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="restaurant-menu p-4 max-w-5xl mx-auto space-y-6">
+    <div className="restaurant-menu mt-4 p-4 max-w-5xl mx-auto space-y-6 bg-white dark:bg-gray-900">
       {menu.map((section) => (
         <MenuSection key={section.category} section={section} />
       ))}

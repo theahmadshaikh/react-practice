@@ -12,20 +12,17 @@ export default function Body() {
   const [searchQuery, setSearchQuery] = useState("");
   const isOnline = userInternetStatus();
 
-  // Filter restaurants by search query
   const filteredRestaurants = restaurants.filter((r) =>
     r.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // Reset search query
   const handleShowAll = () => {
     setSearchQuery("");
   };
 
-  // Offline UI
   if (!isOnline) {
     return (
-      <div className="flex flex-col items-center justify-center h-screen text-center text-gray-700 px-4">
+      <div className="flex flex-col items-center justify-center h-screen text-center text-gray-700 dark:text-gray-300 px-4 bg-white dark:bg-gray-900">
         <h1 className="text-3xl font-bold mb-2">🔌 You're Offline</h1>
         <p className="text-sm">Please check your internet connection.</p>
       </div>
@@ -33,7 +30,7 @@ export default function Body() {
   }
 
   return (
-    <main className="px-2 py-4 max-w-7xl mx-auto">
+    <main className="px-2 py-4 max-w-7xl mx-auto bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 mt-4">
       {/* Search and Filter Controls */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         <SearchBar query={searchQuery} onChange={setSearchQuery} />
@@ -45,7 +42,6 @@ export default function Body() {
         </button>
       </div>
 
-      {/* Restaurant List */}
       <RestaurantList
         data={searchQuery ? filteredRestaurants : restaurants}
         isLoading={loading}
