@@ -32,6 +32,7 @@ export default function NavLinks({ cartCount }) {
             {/* Cart Icon as a separate nav item, not wrapped in NavLink */}
             <li className="flex items-center">
                 <button
+                aria-label="cart"
                     onClick={() => dispatch(openCartDrawer())}
                     className="cursor-pointer text-white hover:text-yellow-400 transition-all duration-200"
                 >

@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "start": "parcel index.html ",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@tailwindcss/postcss": "^4.1.8",
@@ -12,6 +17,15 @@
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "babel-jest": "^30.0.0",
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
     "parcel": "^2.15.2"
   }
 }

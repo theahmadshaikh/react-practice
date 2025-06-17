@@ -13,6 +13,7 @@ import { PersistGate } from "redux-persist/integration/react"; // <-- add this
 const Grocery = React.lazy(() => import("./components/Grocery"));
 
 import { Toaster } from "react-hot-toast";
+import Contact from "./components/Contact";
 
 function AppLayout() {
   return (
@@ -48,6 +49,11 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:id",
         element: <RestaurantMenu />,
+        errorElement: <ErrorPage />,
+      },
+        {
+        path: "contact",
+        element: <Contact/>,
         errorElement: <ErrorPage />,
       },
       {

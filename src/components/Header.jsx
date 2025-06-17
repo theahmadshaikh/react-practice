@@ -2,7 +2,6 @@ import { FaStore } from "react-icons/fa";
 import NavLinks from "./NavLinks";
 
 export default function Header() {
-  const cartItemCount = 3; // TODO: replace with Redux, Zustand, Context
 
   return (
     <header className="flex items-center justify-between px-6 py-4 bg-gray-900 text-white shadow-md">
@@ -14,7 +13,7 @@ export default function Header() {
       </div>
 
       <nav>
-        <NavLinks cartCount={cartItemCount} />
+        <NavLinks />
       </nav>
     </header>
   );
