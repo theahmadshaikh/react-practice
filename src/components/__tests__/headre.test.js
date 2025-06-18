@@ -5,7 +5,6 @@ import { Provider } from "react-redux";
 import appStore from "../../utils/appStore";
 import { BrowserRouter } from "react-router-dom";
 
-// Helper function to wrap Header with required providers
 const renderWithProviders = () =>
   render(
     <BrowserRouter>

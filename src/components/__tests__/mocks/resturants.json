@@ -1,0 +1,957 @@
+{
+    "statusCode": 0,
+    "data": {
+        "statusMessage": "done successfully",
+        "pageOffset": {
+            "nextOffset": "CJxqENNSKICAiMfTzbrzHDDGDjgC",
+            "widgetOffset": {
+                "restaurantCountWidget": "",
+                "inlineFacetFilter": "",
+                "collectionV5RestaurantListWidget_SimRestoRelevance_food": "8",
+                "collectionV5MastheadWidget": ""
+            }
+        },
+        "cards": [
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+                        "collectionId": "83637",
+                        "title": "Burger",
+                        "description": "Satisfy your cravings with these fresh and flavoursome burgers.",
+                        "imageId": "COLLECTIONS/IMAGES/MERCH/2024/7/2/6f256b56-e319-488b-8003-9ccca21d4f14_pic",
+                        "aspectRatio": "3.44",
+                        "cta": {
+                            "link": "swiggy://collectionV2?collection_id=83637&tags=layout_CCS_Burger,burger,layout_Burger,ads_pc_burger",
+                            "type": "collectionv2"
+                        },
+                        "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+                        "count": "51 restaurants"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+                        "sortConfigs": [
+                            {
+                                "key": "relevance",
+                                "title": "Relevance (Default)",
+                                "selected": true,
+                                "defaultSelection": true
+                            },
+                            {
+                                "key": "deliveryTimeAsc",
+                                "title": "Delivery Time"
+                            },
+                            {
+                                "key": "modelBasedRatingDesc",
+                                "title": "Rating"
+                            },
+                            {
+                                "key": "costForTwoAsc",
+                                "title": "Cost: Low to High"
+                            },
+                            {
+                                "key": "costForTwoDesc",
+                                "title": "Cost: High to Low"
+                            }
+                        ],
+                        "restaurantCount": 51,
+                        "facetList": [
+                            {
+                                "label": "10 Mins Delivery",
+                                "id": "isRestaurantBolt",
+                                "selection": "SELECT_TYPE_SINGLESELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "10 Mins Delivery",
+                                        "id": "isRestaurantBoltfacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_FLATTENED",
+                                "subLabel": "Filterby",
+                                "icon": "COLLECTIONS/IMAGES/MERCH/2024/12/18/4b2e8903-0e25-401b-8ede-088491b4cfa0_937977a3-b03b-4a9e-8b6a-24937664d1a9_pic.png",
+                                "selectedIcon": "COLLECTIONS/IMAGES/MERCH/2024/12/26/fcab0012-69db-492b-83ef-e61699c3bf5b_4b2e8903-0e25-401b-8ede-088491b4cfa0_937977a3-b03b-4a9e-8b6a-24937664d1a9_pic.png"
+                            },
+                            {
+                                "label": "Veg/Non-Veg",
+                                "id": "isVeg",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Non Veg",
+                                        "id": "isVegfacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Pure Veg",
+                                        "id": "isVegfacetquery1",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filterby",
+                                "openFilter": true
+                            },
+                            {
+                                "label": "Ratings",
+                                "id": "rating",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Ratings",
+                                        "id": "ratingfacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Ratings 4.0+",
+                                        "id": "ratingfacetquery1",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Ratings 4.5+",
+                                        "id": "ratingfacetquery2",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filterby",
+                                "openFilter": true
+                            },
+                            {
+                                "label": "Delivery Time",
+                                "id": "deliveryTime",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Less than 30 mins",
+                                        "id": "deliveryTimefacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Less than 45 mins",
+                                        "id": "deliveryTimefacetquery1",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filterby",
+                                "openFilter": true
+                            },
+                            {
+                                "label": "Cost For Two",
+                                "id": "costForTwo",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Less than Rs. 300",
+                                        "id": "costForTwofacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Rs.300 - Rs.600",
+                                        "id": "costForTwofacetquery1",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Greater than Rs. 600",
+                                        "id": "costForTwofacetquery2",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filterby",
+                                "openFilter": true
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+                        "layout": {
+                            "rows": 1,
+                            "widgetPadding": {
+                                "left": 16,
+                                "right": 16
+                            },
+                            "scrollBar": {},
+                            "widgetTheme": {
+                                "defaultMode": {
+                                    "backgroundColour": "#FFFFFF",
+                                    "theme": "THEME_TYPE_LIGHT"
+                                },
+                                "darkMode": {
+                                    "backgroundColour": "#1B3028",
+                                    "theme": "THEME_TYPE_DARK"
+                                }
+                            }
+                        },
+                        "id": "restaurantCountWidget",
+                        "gridElements": {
+                            "infoWithStyle": {
+                                "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                                "text": "Restaurants to explore",
+                                "headerStyling": {
+                                    "textSize": 15,
+                                    "textColor": "text_color_highest_emphasis",
+                                    "textFontName": "FONT_NAME_HEADER_H5",
+                                    "maxLines": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "361265",
+                            "name": "Wendy's Burgers",
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/11/5dc086f9-2e49-4500-9bd3-057e7db227ee_361265.JPG",
+                            "locality": "Azad Nagar",
+                            "areaName": "Thane West",
+                            "costForTwo": "₹400 for two",
+                            "cuisines": [
+                                "Burgers",
+                                "American",
+                                "Fast Food",
+                                "Snacks"
+                            ],
+                            "avgRating": 4.2,
+                            "parentId": "972",
+                            "avgRatingString": "4.2",
+                            "totalRatingsString": "4.7K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=30065376~p=0~adgrpid=30065376#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=361265~plpr=COLLECTION~eid=8d0663b2-2d44-4e9d-90bb-7181fea4f37f~srvts=1750228221670~collid=83637",
+                            "sla": {
+                                "deliveryTime": 32,
+                                "lastMileTravel": 1.3,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "30-35 mins",
+                                "lastMileTravelString": "1.3 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-06-18 23:59:00",
+                                "opened": true
+                            },
+                            "badges": {
+                                "textExtendedBadges": [
+                                    {
+                                        "iconId": "guiltfree/GF_Logo_android_3x",
+                                        "shortDescription": "options available",
+                                        "fontColor": "#7E808C"
+                                    }
+                                ]
+                            },
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {},
+                                    "textExtendedBadges": {
+                                        "badgeObject": [
+                                            {
+                                                "attributes": {
+                                                    "fontColor": "#7E808C",
+                                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                                    "description": "",
+                                                    "shortDescription": "options available"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "₹125 OFF",
+                                "subHeader": "ABOVE ₹449",
+                                "discountTag": "FLAT DEAL"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "--"
+                                }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "30065376"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=361265&source=collection&query=Burger",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "221810",
+                            "name": "Burger King",
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/24/48de608c-d073-445e-8d15-458430e86c78_221810.jpg",
+                            "locality": "Lake City Mall",
+                            "areaName": "Thane West",
+                            "costForTwo": "₹350 for two",
+                            "cuisines": [
+                                "Burgers",
+                                "American"
+                            ],
+                            "avgRating": 4.4,
+                            "parentId": "166",
+                            "avgRatingString": "4.4",
+                            "totalRatingsString": "40K+",
+                            "sla": {
+                                "deliveryTime": 16,
+                                "lastMileTravel": 0.7,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "15-20 mins",
+                                "lastMileTravelString": "0.7 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-06-19 06:00:00",
+                                "opened": true
+                            },
+                            "badges": {
+                                "imageBadges": [
+                                    {
+                                        "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+                                        "description": "bolt!"
+                                    }
+                                ]
+                            },
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {
+                                        "badgeObject": [
+                                            {
+                                                "attributes": {
+                                                    "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+                                                    "description": "bolt!"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "textExtendedBadges": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "₹120 OFF",
+                                "subHeader": "ABOVE ₹199",
+                                "discountTag": "FLAT DEAL",
+                                "logoCtx": {
+                                    "text": "BENEFITS"
+                                }
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "--"
+                                }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=221810&source=collection&query=Burger",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "448533",
+                            "name": "B Burger - Bigger Burger",
+                            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/2/add5a95a-6379-4039-b8ba-2e2cc5849670_349dc4b4-d401-4e76-ba1d-9c1aa377d658.jpg",
+                            "locality": "Thane West",
+                            "areaName": "Majiwada",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": [
+                                "Burgers",
+                                "Fast Food",
+                                "American"
+                            ],
+                            "avgRating": 4.3,
+                            "parentId": "454391",
+                            "avgRatingString": "4.3",
+                            "totalRatingsString": "2.5K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=0f34e654-aee5-48a3-b4fd-c5d0cd90c307~p=1~adgrpid=0f34e654-aee5-48a3-b4fd-c5d0cd90c307#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=448533~plpr=COLLECTION~eid=a1a468c1-fc81-4550-8523-3803d0db76ea~srvts=1750228221670~collid=83637",
+                            "sla": {
+                                "deliveryTime": 19,
+                                "lastMileTravel": 0.8,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "15-20 mins",
+                                "lastMileTravelString": "0.8 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-06-18 23:59:00",
+                                "opened": true
+                            },
+                            "badges": {
+                                "imageBadges": [
+                                    {
+                                        "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+                                        "description": "bolt!"
+                                    },
+                                    {
+                                        "imageId": "newg.png",
+                                        "description": "Gourmet"
+                                    }
+                                ]
+                            },
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {
+                                        "badgeObject": [
+                                            {
+                                                "attributes": {
+                                                    "description": "bolt!",
+                                                    "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png"
+                                                }
+                                            },
+                                            {
+                                                "attributes": {
+                                                    "imageId": "newg.png",
+                                                    "description": "Gourmet"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "textExtendedBadges": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "50% OFF",
+                                "discountTag": "FLAT DEAL",
+                                "logoCtx": {
+                                    "text": "BENEFITS"
+                                }
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "3.3",
+                                    "ratingCount": "50"
+                                },
+                                "source": "GOOGLE",
+                                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "0f34e654-aee5-48a3-b4fd-c5d0cd90c307"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=448533&source=collection&query=Burger",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "23740",
+                            "name": "McDonald's",
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/5/22/2db5458a-c316-4571-9232-e6fb8d39db1e_23740.JPG",
+                            "locality": "Lake City Mall",
+                            "areaName": "Thane West",
+                            "costForTwo": "₹400 for two",
+                            "cuisines": [
+                                "Burgers",
+                                "Beverages",
+                                "Cafe",
+                                "Desserts"
+                            ],
+                            "avgRating": 4.5,
+                            "parentId": "630",
+                            "avgRatingString": "4.5",
+                            "totalRatingsString": "28K+",
+                            "sla": {
+                                "deliveryTime": 14,
+                                "lastMileTravel": 0.7,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "10-15 mins",
+                                "lastMileTravelString": "0.7 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-06-18 23:59:00",
+                                "opened": true
+                            },
+                            "badges": {
+                                "imageBadges": [
+                                    {
+                                        "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+                                        "description": "bolt!"
+                                    },
+                                    {
+                                        "imageId": "Rxawards/_CATEGORY-Burger.png",
+                                        "description": "Delivery!"
+                                    }
+                                ]
+                            },
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textExtendedBadges": {},
+                                    "textBased": {},
+                                    "imageBased": {
+                                        "badgeObject": [
+                                            {
+                                                "attributes": {
+                                                    "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+                                                    "description": "bolt!"
+                                                }
+                                            },
+                                            {
+                                                "attributes": {
+                                                    "description": "Delivery!",
+                                                    "imageId": "Rxawards/_CATEGORY-Burger.png"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "₹80 OFF",
+                                "subHeader": "ABOVE ₹399",
+                                "discountTag": "FLAT DEAL",
+                                "logoCtx": {
+                                    "text": "BENEFITS"
+                                }
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "--"
+                                }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=23740&source=collection&query=Burger",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "340444",
+                            "name": "Social",
+                            "cloudinaryImageId": "fnkptar5tiqelwchiggy",
+                            "locality": "Tenant Space SF-32",
+                            "areaName": "Viviana Mall",
+                            "costForTwo": "₹600 for two",
+                            "cuisines": [
+                                "Chinese",
+                                "Fast Food",
+                                "Biryani",
+                                "Pizzas",
+                                "Salads",
+                                "Kebabs",
+                                "Juices",
+                                "Desserts",
+                                "Beverages"
+                            ],
+                            "avgRating": 4.2,
+                            "parentId": "616464",
+                            "avgRatingString": "4.2",
+                            "totalRatingsString": "2.4K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=eed7fcec-48f6-46a5-8735-476c9d49a156~p=14~adgrpid=eed7fcec-48f6-46a5-8735-476c9d49a156#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=340444~plpr=COLLECTION~eid=bc862665-89a3-43ca-9181-3620ddc2a9ac~srvts=1750228221670~collid=83637",
+                            "sla": {
+                                "deliveryTime": 52,
+                                "lastMileTravel": 0.8,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "50-55 mins",
+                                "lastMileTravelString": "0.8 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-06-19 01:00:00",
+                                "opened": true
+                            },
+                            "badges": {},
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textExtendedBadges": {},
+                                    "textBased": {},
+                                    "imageBased": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "ITEMS",
+                                "subHeader": "AT ₹199"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "--"
+                                }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "eed7fcec-48f6-46a5-8735-476c9d49a156"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=340444&source=collection&query=Burger",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "342530",
+                            "name": "BOSS Burger",
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/16/f52ff27e-851d-4c8e-8fca-c78603e24d5a_342530.jpg",
+                            "locality": "Thane West",
+                            "areaName": "Viviana Mall",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": [
+                                "Burgers",
+                                "American",
+                                "Fast Food",
+                                "Snacks"
+                            ],
+                            "avgRating": 4.4,
+                            "parentId": "8594",
+                            "avgRatingString": "4.4",
+                            "totalRatingsString": "1.3K+",
+                            "sla": {
+                                "deliveryTime": 49,
+                                "lastMileTravel": 0.8,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "45-50 mins",
+                                "lastMileTravelString": "0.8 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-06-19 01:00:00",
+                                "opened": true
+                            },
+                            "badges": {},
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {},
+                                    "textExtendedBadges": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "₹125 OFF",
+                                "subHeader": "ABOVE ₹249",
+                                "discountTag": "FLAT DEAL",
+                                "logoCtx": {
+                                    "text": "BENEFITS"
+                                }
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "--"
+                                }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=342530&source=collection&query=Burger",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "594646",
+                            "name": "BK Cafe",
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/27/fbafaaa6-239a-4415-8c23-28857b64d4dc_594646.jpg",
+                            "locality": "Thane West",
+                            "areaName": "Thane Hiranandani Estate",
+                            "costForTwo": "₹350 for two",
+                            "cuisines": [
+                                "Beverages",
+                                "Cafe",
+                                "Snacks"
+                            ],
+                            "avgRating": 4.5,
+                            "parentId": "337525",
+                            "avgRatingString": "4.5",
+                            "totalRatingsString": "23",
+                            "promoted": true,
+                            "adTrackingId": "cid=29867943~p=19~adgrpid=29867943#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=594646~plpr=COLLECTION~eid=7e827fa6-1c17-4030-bf5e-a0c1a7c19306~srvts=1750228221670~collid=83637",
+                            "sla": {
+                                "deliveryTime": 43,
+                                "lastMileTravel": 5,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "40-45 mins",
+                                "lastMileTravelString": "5.0 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-06-19 03:45:00",
+                                "opened": true
+                            },
+                            "badges": {},
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "imageBased": {},
+                                    "textExtendedBadges": {},
+                                    "textBased": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "ITEMS",
+                                "subHeader": "AT ₹59",
+                                "logoCtx": {
+                                    "text": "BENEFITS"
+                                }
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "4.3",
+                                    "ratingCount": "1.3K+"
+                                },
+                                "source": "GOOGLE",
+                                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "29867943"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=594646&source=collection&query=Burger",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            }
+        ],
+        "firstOffsetRequest": true,
+        "nextFetch": 3
+    },
+    "tid": "c95c6e9d-8e9b-4331-94dd-716a9d9911a0",
+    "sid": "l8ce8550-1e85-4b64-a243-e37ef59339a6",
+    "deviceId": "04e34507-2713-a702-a60d-08aba4d564b6",
+    "csrfToken": "Oj1N9MeZHwqP-U0MumspGi9ONlPZR94XUe1Rz9Qo"
+}
